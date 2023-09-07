@@ -1,5 +1,5 @@
 project:
-  name: quickstart-intersystems-iris
+  name: cfn-ps-intersystems-iris
   owner: quickstart-eng@amazon.com
   package_lambda: false
   regions:
@@ -21,7 +21,7 @@ tests:
       SshKeyParameter: $[taskcat_getkeypair]
       QSS3BucketName: $[taskcat_autobucket]
       QSS3BucketRegion: $[taskcat_current_region]
-      QSS3KeyPrefix: quickstart-intersystems-iris/
+      QSS3KeyPrefix: cfn-ps-intersystems-iris/
     template: ./templates/iris-entrypoint-new-vpc.template.yaml
     regions:
     - us-east-1
